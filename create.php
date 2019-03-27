@@ -1,4 +1,4 @@
-<?php require_once 'includes/head.php'; ?>
+<?php require_once 'templates/_head.php'; ?>
     <section class="section">
         <div class="container">
             <h1 class="title">
@@ -29,7 +29,7 @@
                 <div class="field">
                     <label class="label">Content</label>
                     <div class="control">
-                        <textarea class="textarea" placeholder="Textarea" name="content"></textarea>
+                        <textarea class="textarea" placeholder="Your awesome article !" name="content"></textarea>
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@
                     <label class="label">Author</label>
                     <div class="control has-icons-left has-icons-right">
                         <input class="input" type="text"
-                               placeholder="Type the title of your awesome article here !" value="" name="author">
+                               placeholder="Type the author of this awesome article here !" value="" name="author">
                         <span class="icon is-small is-left">
                             <i class="fas fa-user"></i>
                         </span>
@@ -66,4 +66,4 @@
             </form>
         </div>
     </section>
-<?php require_once 'includes/foot.php'; ?>
+<?php require_once 'templates/_foot.php'; ?>

@@ -1,5 +1,6 @@
 :root {
     --primary-color: tomato;
+    --secondary-color: #00d1b2;
 }
 
 a {
@@ -41,11 +42,21 @@ footer{
 }
 
 
-.subtitle,
-strong{
+.subtitle{
     filter: brightness(85%);
 }
 
 .pagination{
     margin-bottom: 25px;
+}
+
+footer strong {
+
+    display: inline-block;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    padding: 5px;
+    color: white;
+    margin-bottom: -5px;
+    margin-left: 5px;
 }

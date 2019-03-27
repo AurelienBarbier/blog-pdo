@@ -1,4 +1,4 @@
-<?php require_once 'includes/head.php'; ?>
+<?php require_once 'templates/_head.php'; ?>
     <section class="section">
         <div class="container">
             <h1 class="title">
@@ -37,4 +37,4 @@
             </a>
         </div>
     </section>
-<?php require_once 'includes/foot.php'; ?>
+<?php require_once 'templates/_foot.php'; ?>
