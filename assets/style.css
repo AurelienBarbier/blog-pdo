@@ -1,0 +1,51 @@
+:root {
+    --primary-color: tomato;
+}
+
+a {
+    cursor: pointer;
+    color:#ff6347;
+}
+
+/* note: 100% is baseline so 85% is slightly darker,
+   20% would be significantly darker */
+a:hover {
+    color:#ff6347;
+    filter: brightness(85%);
+}
+
+.navbar{
+    box-shadow:1px 1px 0px #CCC;
+}
+
+.navbar-link.is-active, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:hover {
+    color:white;
+    background-color:#ff6347;
+    filter: brightness(100%);
+}
+
+.pagination-link.is-current{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+footer{
+    color:white;
+    background-color: var(--primary-color);
+}
+
+.title,
+.subtitle,
+.subtitle strong{
+    color: var(--primary-color);
+}
+
+
+.subtitle,
+strong{
+    filter: brightness(85%);
+}
+
+.pagination{
+    margin-bottom: 25px;
+}

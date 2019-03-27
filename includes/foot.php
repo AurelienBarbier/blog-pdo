@@ -1,3 +1,26 @@
+<footer class="container-fluid">
+    <div class="columns is-centered">
+        <div class="column is-full-mobile is-one-quarter-desktop">
+            <strong>POST debug</strong>
+            <pre>
+            <?php var_dump($_POST); ?>
+        </pre>
+        </div>
+        <div class="column is-full-mobile is-one-quarter-desktop">
+            <strong>GET debug</strong>
+            <pre>
+            <?php var_dump($_GET); ?>
+        </pre>
+        </div>
+        <div class="column is-full-mobile is-one-quarter-desktop">
+            <strong>PDO debug </strong>
+            <pre>
+                <?php var_dump($pdo->errorInfo()); ?>
+            </pre>
+        </div>
+    </div>
+</footer>
+
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', () => {
 
@@ -8,7 +31,7 @@
         if ($navbarBurgers.length > 0) {
 
             // Add a click event on each of them
-            $navbarBurgers.forEach( el => {
+            $navbarBurgers.forEach(el => {
                 el.addEventListener('click', () => {
 
                     // Get the target from the "data-target" attribute

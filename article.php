@@ -29,4 +29,12 @@
             <em>Publié le 26/03/2018 par Otis</em>
         </div>
     </section>
+    <section class="section">
+        <div class="container">
+            <a href="/" class="button is-primary">
+                <i class="fas fa-chevron-left"></i>
+                &nbsp;Retour
+            </a>
+        </div>
+    </section>
 <?php require_once 'includes/foot.php'; ?>

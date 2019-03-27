@@ -26,7 +26,6 @@
                     </div>
                 </div>
 
-
                 <div class="field">
                     <label class="label">Content</label>
                     <div class="control">
@@ -48,16 +47,20 @@
                     <label class="label">Date</label>
                     <div class="control has-icons-left">
                         <input class="input" type="date"
-                               placeholder="Type the title of your awesome article here !" value="" name="date">
+                               placeholder="Type the date of publication of this awesome article here !" value=""
+                               name="date">
                         <span class="icon is-small is-left">
                         <i class="fas fa-calendar"></i>
                     </span>
                     </div>
                 </div>
 
-                <div class="field is-grouped">
-                    <div class="control">
-                        <button class="button is-link" type="submit">Submit</button>
+                <div class="field">
+                    <div class="control has-text-right">
+                        <button class="button is-primary" type="submit">
+                            Enregister&nbsp;
+                            <i class="fas fa-check"></i>
+                        </button>
                     </div>
                 </div>
             </form>
