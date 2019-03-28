@@ -9,7 +9,7 @@
         <div class="media">
             <div class="media-content">
                 <p class="title is-4"><?= $article['title'];?></p>
-                <p class="subtitle is-6">@<?= $article['author'];?></p>
+                <p class="subtitle is-6"><a href="author.php?name=<?= $article['author']; ?>">@<?= $article['author'];?></a></p>
             </div>
         </div>
 
