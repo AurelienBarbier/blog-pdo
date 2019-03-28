@@ -7,7 +7,7 @@ Tu as à ta disposition tout un squelette html/css, tu n'as pas besoin d'y touch
 
 ## Etapes
 0. Après avoir cloné ce dépot, et lancé ton serveur PHP embarqué, attaque toi à la suite des directives ci-dessous.
-1. Créer une base de données appelée **"blog"** en local via le terminal,
+1. Créer une base de données appelée **"blog"** en local via le terminal : `CREATE DATABASE blog CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;`,
 2. Créer une table **"article"** contenant les champs suivants avec les types qui te semble appropriés :
 
     - id
