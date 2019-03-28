@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . '/../inc/conection.php'; ?>
+<?php require_once __DIR__ . '/../inc/connection.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
