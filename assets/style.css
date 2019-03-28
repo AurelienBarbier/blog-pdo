@@ -60,3 +60,11 @@ footer strong {
     margin-bottom: -5px;
     margin-left: 5px;
 }
+
+.columns{
+    align-items: stretch;
+}
+
+.columns .card {
+    height: 100%;
+}
