@@ -1,5 +1,6 @@
 <?php
-
 define("DSN", "mysql:host=localhost;dbname=blog");
-define("USER", "****");
-define("PASS", "****");
+// Type here the username you use in your CLI to connect to MySQL juste after -u option
+define("LOGIN", "");
+// Type here the password you use in your CLI to connect to MySQL when
+define("PWD", "");
