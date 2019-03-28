@@ -8,16 +8,16 @@
     <div class="card-content">
         <div class="media">
             <div class="media-content">
-                <p class="title is-4">C'est une bonne situation, ça, scribe ?</p>
-                <p class="subtitle is-6">@otis</p>
+                <p class="title is-4"><?= $article['title'];?></p>
+                <p class="subtitle is-6">@<?= $article['author'];?></p>
             </div>
         </div>
 
         <div class="content">
-            "Mais, vous savez, moi je ne crois pas qu'il y ait de bonne ou de mauvaise situation..."
-            <a href="article.php?id=#">Lire plus</a>
+            <?php echo substr($article['content'], 0, 80);?>...
+            <a href="article.php?id=<?= $article['id'];?>">Lire plus</a>
             <br>
-            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            <time datetime="2016-1-1"><?= date('d\/m\/Y', strtotime($article['date']));?></time>
         </div>
     </div>
 </div>

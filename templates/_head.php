@@ -1,4 +1,8 @@
-<?php require_once __DIR__ . '/../inc/connection.php'; ?>
+<?php
+require_once __DIR__ . '/../inc/connection.php';
+// Connect my new instance of PDO to my local database server based on constant defined in the file above.
+$pdo = new PDO(DSN, LOGIN, PWD);
+?>
 <!DOCTYPE html>
 <html>
 <head>

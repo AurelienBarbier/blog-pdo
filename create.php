@@ -1,4 +1,32 @@
-<?php require_once 'templates/_head.php'; ?>
+<?php
+require_once 'templates/_head.php';
+
+// Im testing if I have data submited by post method.
+if (!empty($_POST)) {
+
+    // If yes, I can try to insert my new article
+    // Write the pattern of an SQL request wich insert data in a table with placeholders prefixed with ':'.
+    $sql = 'INSERT INTO article (`title`, `content`, `author`, `date`)
+        VALUES (:title, :content, :author, :date);';
+
+    // Tell to PDO to prepare the request. Why preparing a request ? look at the slides on your drive.
+    $prepared = $pdo->prepare($sql);
+
+    // Link the placeholders of your request with dynamic values from the $_POST superglobals. How POST work ? look at your quest on forms.
+    $prepared->bindValue(':title', $_POST['title'], PDO::PARAM_STR);
+    $prepared->bindValue(':content', $_POST['content'], PDO::PARAM_STR);
+    $prepared->bindValue(':author', $_POST['author'], PDO::PARAM_STR);
+    $prepared->bindValue(':date', $_POST['date'], PDO::PARAM_STR);
+
+    // Tell to PDO to execute your request on your server.
+    $prepared->execute();
+
+    // We can get the last id inserted in DB from PDO in order to redirect user to the details of the article.
+    $newId = $pdo->lastInsertId();
+    header('Location:/article.php?id=' . $newId);
+}
+
+?>
     <section class="section">
         <div class="container">
             <h1 class="title">
